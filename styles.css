@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 /* Page Container Styles */
@@ -80,6 +81,7 @@
 /* Used to scale down the home image. You can remove this. */
 img {
   max-width: 40vw;
+  justify-content: flex-end;
 }
 
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
@@ -91,13 +93,51 @@ img {
 }
 
 h1 {
-  color: gray;
+  color: rgb(83, 80, 80);
+  text-align: start;
 }
 
 h2 {
   color: #ed2d34;
+  text-align: start;
 }
 
 h3 {
   color: #ed2d34;
+}
+
+.content{
+  letter-spacing: 2px;
+  display: grid;
+  height: 50vh;
+  grid-template-columns: auto auto;
+  margin: 150px;
+  margin-bottom: 130px;
+  align-items: center;
+  text-align: left;
+  box-sizing: content-box;
+}
+
+p{
+  max-width: 200px;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.btn{
+  background:lightslategray;
+  color:white;
+  width: 200px;
+  height: 80px;
+  border: 5x plightslategray;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: .6s;
+  overflow: hidden;
+  padding: 8px;
+  justify-content: center;
 }

@@ -80,8 +80,12 @@
 
 /* Used to scale down the home image. You can remove this. */
 img {
-  max-width: 40vw;
-  justify-content: flex-end;
+  text-align: right;
+  width: 50%;
+  height: 70%;
+  margin-top: 40px;
+  padding: 30px;
+  object-fit:fill;
 }
 
 /* PLEASE START YOUR STYLES UNDERNEATH THIS */
@@ -89,55 +93,89 @@ img {
 .home-heading {
   font-family: sans-serif;
   padding: 0;
-  font-size: 50px;
+  font-size: 3em;
+  word-spacing: 5px;
+  line-height: 65px;
+  font-weight: 300px;
 }
 
 h1 {
   color: rgb(83, 80, 80);
-  text-align: start;
+  line-height: 1.2;
+  font-size: 400px;
 }
 
 h2 {
   color: #ed2d34;
-  text-align: start;
-}
-
-h3 {
-  color: #ed2d34;
+  font-weight: 700;
 }
 
 .content{
-  letter-spacing: 2px;
-  display: grid;
-  height: 50vh;
-  grid-template-columns: auto auto;
-  margin: 150px;
-  margin-bottom: 130px;
-  align-items: center;
-  text-align: left;
-  box-sizing: content-box;
+  max-height: 1400px;
+  max-width: 1300px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: .5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 p{
-  max-width: 200px;
+  max-width: 100%;
   margin-block-start: 2em;
   margin-block-end: 2em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   font-size: 14px;
   justify-content: center;
+  font-size: 20px;
+  padding: 0 0 25px;
+  box-sizing: border-box;
 }
 
 .btn{
-  background:lightslategray;
+  background: transparent;
+  background-color:lightslategray;
+  border-color: lightslategray;
   color:white;
-  width: 200px;
-  height: 80px;
-  border: 5x plightslategray;
+  width: auto;
+  border: 2px transparent;
   font-size: 18px;
-  border-radius: 10px;
+  border-radius: 50px;
   transition: .6s;
   overflow: hidden;
-  padding: 8px;
-  justify-content: center;
+  padding: 10px 48px;
+  text-align: center;
+  line-height: 1.8em;
+  display: inline-block;
+  letter-spacing: .5px;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-decoration: none;
+  position: sticky;
+  transition: all .5s ease;
+}
+
+.home-details{
+  box-sizing: border-box;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 5px;
+  text-align: left;
+  padding: 100px;
+  max-width: 50%;
+  box-sizing:border-box;
+  display:block;
+  float: none;
+  line-height: 25px;
+  position: relative;
+  flex: 0 0 50%;
 }

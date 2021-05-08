@@ -58,6 +58,8 @@
 /* Modal Styling */
 #modal {
   display: none;
+  width: 80vh;
+  height: 80vh;
 }
 
 #modal.modal-active {
@@ -311,6 +313,5 @@ button:hover {
 }
 
 .container{
-  box-sizing: border-box;
-  width: 300px;
+  display: flex;
 }

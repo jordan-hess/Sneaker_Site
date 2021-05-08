@@ -58,8 +58,6 @@
 /* Modal Styling */
 #modal {
   display: none;
-  width: 80vh;
-  height: 80vh;
 }
 
 #modal.modal-active {
@@ -71,9 +69,16 @@
   border: 1px solid black;
   color: black;
   z-index: 100;
-  width: 50vw;
-  height: 50vh;
+  width: 80vw;
   transform: translate(-50%, -50%);
+  /* width: 100%; */
+  /* max-width: 1200px; */
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  padding: 5% 50px;
+  /* margin-top: 5px; */
+  opacity: 1;
 }
 /* Used to prevent the carousel from stretching the screen */
 .owl-carousel {
@@ -81,7 +86,7 @@
 }
 
 /* Used to scale down the home image. You can remove this. */
-img {
+.img-1 {
   text-align: right;
   width: 40%;
   height: 70%;
@@ -290,9 +295,11 @@ button {
   box-sizing: border-box;
   text-decoration: none;
   transition: all 0.5s ease;
-  position: initial;
-  text-align: center;
-  margin-left: 150px;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  margin-left: 140px;
+  margin-bottom: 40px;
 }
 
 button:hover {
@@ -301,17 +308,121 @@ button:hover {
   border-color: red;
 }
 
+.shoe-description {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
-.product-pic{
+h5 {
+  font-size: 40px;
+  color: red;
+  line-height: 50px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+.shoe-size {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  height: fit-content;
+  border: none;
+}
+
+.description-header {
+  display: flex;
+  flex-direction: column;
+  /* padding: 70px; */
+  /* margin-left: 450px; */
+  /* max-width: 600px; */
+  /* line-height: 50px; */
+}
+
+.product-pic {
+  width: 50%;
+}
+
+.product-pic-small {
   display: flex;
 }
 
-.shoe-description{
+.product-pic-small img {
+  width: 33%;
+}
+
+.product-sizes {
+  display: flex;
+}
+
+.img-2 {
+  width: 100%;
+  object-fit: contain;
+  height: 50%;
+  /* line-height: 50px; */
+}
+
+.shoe-description {
+  width: 50%;
+}
+
+p2 {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 30px;
+  padding: 20px;
+}
+
+.size {
+  padding: 4px;
+  letter-spacing: 15px;
   font-size: 20px;
-  margin-left: 10px;
+}
+
+.red-text {
+  padding: 5px;
+  font-size: 20px;
+  color: red;
+}
+
+.QC {
   display: flex;
 }
 
-.container{
+.shoe-qountity {
   display: flex;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.qty {
+  letter-spacing: 20px;
+}
+.color {
+  border: red;
+}
+
+.shoe-color {
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+}
+
+.color-picker {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  display: inline-block;
+  margin-right: 5px;
+  outline: 2px black;
 }
